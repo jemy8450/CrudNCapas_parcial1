@@ -157,5 +157,41 @@ namespace Presentation
             CPersonas cPersonas = new CPersonas();
             dgvDatos.DataSource = cPersonas.Buscar(txtBuscar.Text);
         }
+
+
+
+
+        private void txtNombre_Enter(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "Nombre") txtNombre.Text = "";
+        }
+
+        private void txtNombre_Leave(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "") txtNombre.Text = "Nombre";
+        }
+
+        private void txtApellido_Enter(object sender, EventArgs e)
+        {
+            if (txtApellido.Text == "Apellido") txtApellido.Text = "";
+
+        }
+
+        private void txtApellido_Leave(object sender, EventArgs e)
+        {
+            if (txtApellido.Text == "") txtApellido.Text = "Apellido";
+
+        }
+
+        private void txtID_Enter(object sender, EventArgs e)
+        {
+            if (txtID.Text == "ID") txtID.Text = "";
+        }
+
+        private void txtID_Leave(object sender, EventArgs e)
+        {
+            if (txtID.Text == "") txtID.Text = "ID";
+
+        }
     }
 }
